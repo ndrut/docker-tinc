@@ -1,4 +1,4 @@
-FROM gliderlabs/alpine:latest
+FROM alpine
 MAINTAINER Andrew Tynefield <atynefield@gmail.com>
 
 RUN apk add --no-cache readline-dev zlib-dev lzo-dev openssl-dev linux-headers gcc g++ make ncurses-dev libpcap-dev readline zlib lzo libpcap && \
