@@ -1,7 +1,7 @@
 FROM alpine
 MAINTAINER Andrew Tynefield <atynefield@gmail.com>
 
-ARG tincversion=1.0.30
+ARG tincversion=1.1pre14
 
 RUN apk add --no-cache readline-dev zlib-dev lzo-dev openssl-dev linux-headers gcc g++ make ncurses-dev libpcap-dev readline zlib lzo libpcap && \
   wget http://www.tinc-vpn.org/packages/tinc-${tincversion}.tar.gz && \
