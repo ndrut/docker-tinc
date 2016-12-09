@@ -7,7 +7,7 @@ RUN apk add --no-cache readline-dev zlib-dev lzo-dev openssl-dev linux-headers g
   wget http://www.tinc-vpn.org/packages/tinc-${tincversion}.tar.gz && \
   tar xzvf tinc-${tincversion}.tar.gz && \
   cd tinc-${tincversion} && \
-  ./configure --enable-jumbograms --enable-tunemu --sysconfdir=/etc --localstatedir=/var && \
+  ./configure --prefix=/usr --enable-jumbograms --enable-tunemu --sysconfdir=/etc --localstatedir=/var && \
   make && make install src && \
   cd ../ && \
   rm -rfv tinc-${tincversion} && apk del --no-cache --purge readline-dev zlib-dev lzo-dev openssl-dev linux-headers gcc g++ make ncurses-dev libpcap-dev libc-utils
